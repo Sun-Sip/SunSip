@@ -2,7 +2,13 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./client/**/*.{ts,tsx}"],
+  content: [
+    "./sunsip/client/**/*.{js,jsx,ts,tsx}",
+    "./sunsip/client/*.{js,jsx,ts,tsx}",
+    "./sunsip/client/pages/**/*.{js,jsx,ts,tsx}",
+    "./sunsip/client/components/**/*.{js,jsx,ts,tsx}",
+    "./index.html"
+  ],
   prefix: "",
   theme: {
     container: {
